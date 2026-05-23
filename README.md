@@ -10,7 +10,7 @@ A modern personal portfolio website for M. Hassnain Jafar, a BS Computer Science
 - Download CV button linked to a local PDF
 - About and education section
 - Skills section
-- Featured project section
+- Featured projects section
 - GitHub and LinkedIn links
 - Contact section with email and phone links
 - Mobile navigation menu
@@ -29,13 +29,15 @@ A modern personal portfolio website for M. Hassnain Jafar, a BS Computer Science
 - **About:** Short professional summary
 - **Education:** BS Computer Science at COMSATS University Islamabad, Vehari Campus
 - **Skills:** HTML, CSS, JavaScript, Java, C++, SQL, Data Structures, OOP, Git and GitHub
-- **Projects:** `siu.best` Student Assignment Submission Portal
+- **Projects:** `siu.best` Student Assignment Submission Portal and Portfolio Website
 - **Contact:** Email, phone, LinkedIn, and GitHub links
 
 ## Links
 
 - Live Project: [https://siu.best](https://siu.best)
-- GitHub Repository: [https://github.com/SherlockHolmes1249/Website-for-assignment](https://github.com/SherlockHolmes1249/Website-for-assignment)
+- Assignment Portal GitHub Repository: [https://github.com/SherlockHolmes1249/Website-for-assignment](https://github.com/SherlockHolmes1249/Website-for-assignment)
+- Portfolio Website: [https://hassnain-jafar.netlify.app/](https://hassnain-jafar.netlify.app/)
+- Portfolio GitHub Repository: [https://github.com/SherlockHolmes1249/Portfolio](https://github.com/SherlockHolmes1249/Portfolio)
 - LinkedIn: [Muhammad Hassnain Jafar](https://www.linkedin.com/in/muhammad-hassnain-jafar-626199217/)
 
 ## File Structure
