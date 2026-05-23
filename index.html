@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>M. Hassnain Jafar - Web Developer Portfolio</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;family=Manrope:wght@200..800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+  tailwind.config = {
+    darkMode: "class",
+    theme: {
+      extend: {
+        "colors": {
+                "secondary-fixed": "#d0e9d4",
+                "on-error-container": "#ffdad6",
+                "on-secondary-fixed-variant": "#364c3c",
+                "tertiary-container": "#cacdc8",
+                "tertiary-fixed-dim": "#c4c7c3",
+                "surface-container": "#132317",
+                "on-error": "#690005",
+                "on-tertiary-fixed-variant": "#444844",
+                "secondary": "#b4cdb8",
+                "surface-container-low": "#0f1f14",
+                "inverse-on-surface": "#243428",
+                "primary-fixed": "#bdeecb",
+                "on-primary": "#083820",
+                "surface-bright": "#2c3d30",
+                "on-secondary": "#203527",
+                "secondary-fixed-dim": "#b4cdb8",
+                "on-surface": "#d4e8d5",
+                "inverse-surface": "#d4e8d5",
+                "outline-variant": "#414942",
+                "on-primary-fixed-variant": "#234f35",
+                "inverse-primary": "#3b674c",
+                "on-tertiary-container": "#535753",
+                "surface-dim": "#07170c",
+                "on-secondary-container": "#a3bba7",
+                "tertiary-fixed": "#e0e3df",
+                "secondary-container": "#364c3c",
+                "surface-tint": "#a2d2b0",
+                "surface-container-highest": "#28392c",
+                "on-surface-variant": "#c1c9c0",
+                "on-primary-container": "#335f44",
+                "tertiary": "#e6e9e4",
+                "surface": "#07170c",
+                "primary": "#c3f4d0",
+                "surface-container-high": "#1d2e21",
+                "outline": "#8b938b",
+                "surface-variant": "#28392c",
+                "on-background": "#d4e8d5",
+                "error": "#ffb4ab",
+                "on-tertiary-fixed": "#191c1a",
+                "error-container": "#93000a",
+                "primary-fixed-dim": "#a2d2b0",
+                "on-secondary-fixed": "#0b2013",
+                "on-primary-fixed": "#002110",
+                "surface-container-lowest": "#031107",
+                "on-tertiary": "#2d312e",
+                "background": "#07170c",
+                "primary-container": "#a7d7b5"
+        },
+        "borderRadius": {
+                "DEFAULT": "0.25rem",
+                "lg": "0.5rem",
+                "xl": "0.75rem",
+                "full": "9999px"
+        },
+        "spacing": {
+                "lg": "48px",
+                "xs": "4px",
+                "margin-desktop": "64px",
+                "margin-mobile": "16px",
+                "md": "24px",
+                "xl": "80px",
+                "gutter": "24px",
+                "sm": "12px",
+                "base": "8px"
+        },
+        "fontFamily": {
+                "label-sm": [
+                        "Inter"
+                ],
+                "label-md": [
+                        "Inter"
+                ],
+                "headline-lg-mobile": [
+                        "Manrope"
+                ],
+                "body-lg": [
+                        "Be Vietnam Pro"
+                ],
+                "headline-xl": [
+                        "Manrope"
+                ],
+                "body-md": [
+                        "Be Vietnam Pro"
+                ],
+                "headline-lg": [
+                        "Manrope"
+                ],
+                "display": ["Manrope", "sans-serif"],
+                "headline": ["Manrope", "sans-serif"],
+                "body": ["Be Vietnam Pro", "sans-serif"]
+        },
+        "fontSize": {
+                "label-sm": [
+                        "12px",
+                        {
+                                "lineHeight": "16px",
+                                "letterSpacing": "0.05em",
+                                "fontWeight": "600"
+                        }
+                ],
+                "label-md": [
+                        "14px",
+                        {
+                                "lineHeight": "20px",
+                                "letterSpacing": "0.02em",
+                                "fontWeight": "500"
+                        }
+                ],
+                "headline-lg-mobile": [
+                        "28px",
+                        {
+                                "lineHeight": "36px",
+                                "fontWeight": "600"
+                        }
+                ],
+                "body-lg": [
+                        "18px",
+                        {
+                                "lineHeight": "28px",
+                                "fontWeight": "400"
+                        }
+                ],
+                "headline-xl": [
+                        "48px",
+                        {
+                                "lineHeight": "56px",
+                                "letterSpacing": "-0.02em",
+                                "fontWeight": "700"
+                        }
+                ],
+                "body-md": [
+                        "16px",
+                        {
+                                "lineHeight": "24px",
+                                "fontWeight": "400"
+                        }
+                ],
+                "headline-lg": [
+                        "32px",
+                        {
+                                "lineHeight": "40px",
+                                "letterSpacing": "-0.01em",
+                                "fontWeight": "600"
+                        }
+                ]
+        }
+},
+    },
+  }
+</script>
+<style>
+        body {
+            font-family: 'Be Vietnam Pro', sans-serif;
+            background-color: #07170c;
+            color: #d4e8d5;
+            line-height: 1.6;
+        }
+        h1, h2, h3, h4, h5, h6, .font-display, .font-headline {
+            font-family: 'Manrope', sans-serif;
+        }
+    </style>
+</head>
+<body class="antialiased font-body bg-background text-on-background selection:bg-primary-container selection:text-on-primary-container">
+<!-- TopNavBar Component -->
+<nav class="docked full-width top-0 sticky z-50 bg-surface/80 backdrop-blur-md border-b border-outline-variant transition-all duration-300 ease-in-out">
+<div class="flex justify-between items-center w-full px-6 py-4 max-w-7xl mx-auto">
+<div class="text-xl font-display font-bold text-primary tracking-tight">
+                M. Hassnain Jafar
+            </div>
+<div class="hidden md:flex items-center space-x-6">
+<a class="text-on-surface-variant hover:text-primary transition-colors hover:bg-surface-container-high/50 rounded-lg px-3 py-2 text-sm font-medium" href="#about">About</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors hover:bg-surface-container-high/50 rounded-lg px-3 py-2 text-sm font-medium" href="#skills">Skills</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors hover:bg-surface-container-high/50 rounded-lg px-3 py-2 text-sm font-medium" href="#education">Education</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors hover:bg-surface-container-high/50 rounded-lg px-3 py-2 text-sm font-medium" href="#projects">Projects</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors hover:bg-surface-container-high/50 rounded-lg px-3 py-2 text-sm font-medium" href="#contact">Contact</a>
+</div>
+<a class="hidden md:inline-flex items-center justify-center px-5 py-2.5 bg-primary text-on-primary rounded-xl font-medium hover:bg-primary/90 transition-colors active:scale-95 text-sm" href="#contact">
+                Hire Me
+            </a>
+<!-- Mobile Menu Button (Icon Only) -->
+<button aria-expanded="false" aria-label="Open menu" class="md:hidden text-on-surface p-2 rounded-lg hover:bg-surface-container transition-colors" id="mobile-menu-button" type="button">
+<span class="material-symbols-outlined">menu</span>
+</button>
+</div>
+<div class="hidden md:hidden border-t border-outline-variant bg-surface-container-low px-6 py-4 space-y-2" id="mobile-menu">
+<a class="block text-on-surface-variant hover:text-primary rounded-lg px-3 py-2 text-sm font-medium" href="#about">About</a>
+<a class="block text-on-surface-variant hover:text-primary rounded-lg px-3 py-2 text-sm font-medium" href="#skills">Skills</a>
+<a class="block text-on-surface-variant hover:text-primary rounded-lg px-3 py-2 text-sm font-medium" href="#education">Education</a>
+<a class="block text-on-surface-variant hover:text-primary rounded-lg px-3 py-2 text-sm font-medium" href="#projects">Projects</a>
+<a class="block text-on-surface-variant hover:text-primary rounded-lg px-3 py-2 text-sm font-medium" href="#contact">Contact</a>
+</div>
+</nav>
+<main class="max-w-7xl mx-auto px-6 py-12 md:py-24 space-y-32">
+<!-- Hero Section -->
+<section class="flex flex-col md:flex-row items-center gap-12 md:gap-24 relative">
+<div class="flex-1 space-y-8 z-10">
+<div class="inline-flex items-center px-3 py-1 rounded-full bg-surface-container border border-outline-variant/30 text-sm font-medium text-tertiary">
+<span class="w-2 h-2 rounded-full bg-primary mr-2 animate-pulse"></span>
+                    Web Developer (Learning)
+                </div>
+<h1 class="text-5xl md:text-7xl font-display font-medium text-on-background leading-tight tracking-tight">
+                    Hello, world.<br/>
+<span class="text-primary">I am M. Hassnain Jafar.</span>
+</h1>
+<p class="text-lg md:text-xl text-on-surface-variant max-w-2xl font-body leading-relaxed">
+                    A motivated BS Computer Science student dedicated to building robust web applications and continuously expanding my expertise in modern technologies.
+                </p>
+<div class="flex flex-wrap items-center gap-4 pt-4">
+<a class="inline-flex items-center justify-center px-8 py-4 bg-primary text-on-primary rounded-2xl font-medium hover:bg-primary/90 transition-all hover:shadow-md active:scale-95 text-base" href="#projects">
+                        View Projects
+                    </a>
+<a class="inline-flex items-center justify-center px-8 py-4 bg-surface text-primary border border-outline-variant/50 rounded-2xl font-medium hover:bg-surface-container-low transition-all active:scale-95 text-base" href="#about">
+                        More About Me
+                    </a>
+<a class="inline-flex items-center justify-center px-8 py-4 bg-surface text-primary border border-outline-variant/50 rounded-2xl font-medium hover:bg-surface-container-low transition-all active:scale-95 text-base" download href="assets/CV_Hassnain_Jafar.pdf">
+                        Download CV
+                    </a>
+</div>
+</div>
+<div class="flex-1 relative w-full aspect-square md:aspect-auto md:h-[600px] rounded-3xl overflow-hidden border border-outline-variant/20 bg-surface-container">
+<img alt="Modern developer workspace with laptop and web design elements" class="w-full h-full object-cover opacity-90 hover:opacity-100 transition-opacity duration-700" src="assets/portfolio-hero.png"/>
+</div>
+</section>
+<!-- About & Education Section (Bento Style) -->
+<section class="scroll-mt-32" id="about">
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+<!-- About Me Card -->
+<div class="md:col-span-2 bg-surface-container p-8 md:p-12 rounded-3xl border border-outline-variant/30 flex flex-col justify-center">
+<h2 class="text-3xl font-display font-medium text-on-background mb-6 flex items-center gap-3">
+<span class="material-symbols-outlined text-primary" style="font-variation-settings: 'FILL' 1;">person</span>
+                        About Me
+                    </h2>
+<p class="text-on-surface-variant text-lg leading-relaxed mb-6">
+                        I am currently pursuing my Bachelor of Science in Computer Science at COMSATS University Vehari Campus. With a strong academic foundation (CGPA: 3.20), I am passionate about software engineering principles and their practical applications.
+                    </p>
+<p class="text-on-surface-variant text-lg leading-relaxed">
+                        My journey involves continuously expanding my expertise in data structures, Object-Oriented Programming (OOP), and database systems, always aiming to contribute to real-world, impactful projects.
+                    </p>
+</div>
+<!-- Education Card -->
+<div class="bg-surface-container-low p-8 md:p-10 rounded-3xl border border-outline-variant/30 relative overflow-hidden flex flex-col justify-between scroll-mt-32" id="education">
+<div class="absolute top-0 right-0 p-6 opacity-10">
+<span class="material-symbols-outlined text-9xl text-primary">school</span>
+</div>
+<div class="relative z-10">
+<h2 class="text-2xl font-display font-medium text-on-background mb-6 flex items-center gap-2">
+<span class="material-symbols-outlined text-tertiary">school</span>
+                            Education
+                        </h2>
+<div class="space-y-4">
+<div>
+<h3 class="font-bold text-on-surface text-lg">BS Computer Science</h3>
+<p class="text-on-surface-variant text-sm">COMSATS University Islamabad</p>
+<p class="text-on-surface-variant text-sm italic">Vehari Campus | 2024 - Present</p>
+</div>
+<div class="bg-surface-container-high px-4 py-3 rounded-xl border border-outline-variant/20 inline-block">
+<span class="text-sm text-on-surface-variant block">Current CGPA</span>
+<span class="text-2xl font-display font-bold text-primary">3.20<span class="text-sm text-outline font-normal">/4.00</span></span>
+<span class="text-xs text-outline block mt-1">Semester 4</span>
+</div>
+</div>
+</div>
+<div class="relative z-10 mt-8">
+<h4 class="text-sm font-bold text-on-surface mb-2 uppercase tracking-wider">Relevant Coursework</h4>
+<div class="flex flex-wrap gap-2">
+<span class="px-3 py-1 bg-secondary-container text-on-secondary-container text-xs rounded-full border border-outline-variant/20">Data Structures</span>
+<span class="px-3 py-1 bg-secondary-container text-on-secondary-container text-xs rounded-full border border-outline-variant/20">OOP</span>
+<span class="px-3 py-1 bg-secondary-container text-on-secondary-container text-xs rounded-full border border-outline-variant/20">Database Systems</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Skills Section -->
+<section class="scroll-mt-32" id="skills">
+<div class="text-center mb-16">
+<h2 class="text-4xl font-display font-medium text-on-background mb-4">Technical Arsenal</h2>
+<p class="text-on-surface-variant text-lg max-w-2xl mx-auto">Tools and technologies I'm actively using and learning.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+<!-- Core Skills -->
+<div class="space-y-6">
+<h3 class="text-xl font-display font-medium text-on-surface flex items-center gap-2 border-b border-outline-variant/30 pb-3">
+<span class="material-symbols-outlined text-primary">code</span>
+                        Core Proficiencies
+                    </h3>
+<div class="flex flex-wrap gap-3">
+<span class="px-4 py-2 bg-surface-container text-on-surface border border-outline-variant/40 rounded-xl shadow-sm text-sm font-medium hover:border-primary/50 transition-colors">HTML</span>
+<span class="px-4 py-2 bg-surface-container text-on-surface border border-outline-variant/40 rounded-xl shadow-sm text-sm font-medium hover:border-primary/50 transition-colors">CSS</span>
+<span class="px-4 py-2 bg-surface-container text-on-surface border border-outline-variant/40 rounded-xl shadow-sm text-sm font-medium hover:border-primary/50 transition-colors">JavaScript</span>
+<span class="px-4 py-2 bg-surface-container text-on-surface border border-outline-variant/40 rounded-xl shadow-sm text-sm font-medium hover:border-primary/50 transition-colors">Java</span>
+<span class="px-4 py-2 bg-surface-container text-on-surface border border-outline-variant/40 rounded-xl shadow-sm text-sm font-medium hover:border-primary/50 transition-colors">C++</span>
+<span class="px-4 py-2 bg-surface-container text-on-surface border border-outline-variant/40 rounded-xl shadow-sm text-sm font-medium hover:border-primary/50 transition-colors">SQL &amp; Database Design</span>
+<span class="px-4 py-2 bg-surface-container text-on-surface border border-outline-variant/40 rounded-xl shadow-sm text-sm font-medium hover:border-primary/50 transition-colors">Data Structures</span>
+<span class="px-4 py-2 bg-surface-container text-on-surface border border-outline-variant/40 rounded-xl shadow-sm text-sm font-medium hover:border-primary/50 transition-colors">OOP Principles</span>
+<span class="px-4 py-2 bg-surface-container text-on-surface border border-outline-variant/40 rounded-xl shadow-sm text-sm font-medium hover:border-primary/50 transition-colors">Git &amp; GitHub</span>
+</div>
+</div>
+<!-- Currently Learning -->
+<div class="space-y-6">
+<h3 class="text-xl font-display font-medium text-on-surface flex items-center gap-2 border-b border-outline-variant/30 pb-3">
+<span class="material-symbols-outlined text-tertiary">trending_up</span>
+                        Currently Exploring
+                    </h3>
+<div class="bg-surface-container-low border border-outline-variant/30 rounded-2xl p-6 flex items-start gap-4">
+<div class="p-3 bg-surface-container-high rounded-xl text-tertiary">
+<span class="material-symbols-outlined text-primary">analytics</span>
+</div>
+<div>
+<h4 class="font-bold text-on-surface text-lg">A-Z Data Science</h4>
+<p class="text-on-surface-variant text-sm mt-2 leading-relaxed">
+                                Expanding my horizons beyond web development to understand data analysis, machine learning concepts, and deriving actionable insights from raw data.
+                            </p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Projects Section -->
+<section class="scroll-mt-32" id="projects">
+<div class="flex flex-col md:flex-row justify-between items-end mb-12 border-b border-outline-variant/30 pb-6">
+<div>
+<h2 class="text-4xl font-display font-medium text-on-background mb-2">Featured Work</h2>
+<p class="text-on-surface-variant text-lg">Highlighting practical applications of my learning.</p>
+</div>
+</div>
+<!-- Featured Project Card -->
+<div class="bg-surface-container-low rounded-[2rem] overflow-hidden border border-outline-variant/30 flex flex-col md:flex-row group transition-shadow duration-300">
+<div class="md:w-1/2 p-8 md:p-12 flex flex-col justify-center">
+<div class="inline-flex items-center gap-2 text-xs font-bold uppercase tracking-widest text-primary mb-4">
+<span class="material-symbols-outlined text-sm">star</span>
+                        Featured Project
+                    </div>
+<h3 class="text-3xl font-display font-bold text-on-surface mb-4">siu.best</h3>
+<p class="text-lg text-on-surface font-medium mb-4">Student Assignment Submission Portal</p>
+<p class="text-on-surface-variant mb-8 leading-relaxed">
+                        A comprehensive web platform designed to streamline the management of student assignment submissions. Hosted on a custom domain, it features admin authentication, robust assignment filtering, and bulk file download capabilities to efficiently handle large batches of submissions.
+                    </p>
+<div class="mb-8">
+<h4 class="text-xs font-bold text-outline uppercase tracking-wider mb-3">Tech Stack</h4>
+<div class="flex flex-wrap gap-2">
+<span class="px-3 py-1 bg-surface-container-high text-on-surface text-xs rounded-full border border-outline-variant/30">HTML</span>
+<span class="px-3 py-1 bg-surface-container-high text-on-surface text-xs rounded-full border border-outline-variant/30">CSS</span>
+<span class="px-3 py-1 bg-surface-container-high text-on-surface text-xs rounded-full border border-outline-variant/30">JavaScript</span>
+<span class="px-3 py-1 bg-surface-container-high text-on-surface text-xs rounded-full border border-outline-variant/30">Node.js</span>
+</div>
+</div>
+<div class="flex items-center gap-4 text-sm text-on-surface-variant">
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-sm">calendar_today</span> 2025 - Present</span>
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-sm">commit</span> Version Controlled</span>
+</div>
+<div class="flex flex-wrap gap-3 mt-8">
+<a class="inline-flex items-center justify-center px-5 py-3 bg-primary text-on-primary rounded-xl font-medium hover:bg-primary/90 transition-all active:scale-95 text-sm" href="https://siu.best" rel="noopener noreferrer" target="_blank">Visit Site</a>
+<a class="inline-flex items-center justify-center px-5 py-3 bg-surface text-primary border border-outline-variant/50 rounded-xl font-medium hover:bg-surface-container transition-all active:scale-95 text-sm" href="https://github.com/SherlockHolmes1249/Website-for-assignment" rel="noopener noreferrer" target="_blank">GitHub Link</a>
+</div>
+</div>
+<div class="md:w-1/2 relative bg-surface-container-high overflow-hidden min-h-[300px]">
+<img alt="Modern developer workspace with laptop and web design elements" class="absolute inset-0 w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700 ease-in-out opacity-80" src="assets/portfolio-hero.png"/>
+<div class="absolute inset-0 bg-gradient-to-t md:bg-gradient-to-r from-surface-container-low to-transparent md:w-1/4"></div>
+</div>
+</div>
+</section>
+<!-- Contact Section -->
+<section class="scroll-mt-32" id="contact">
+<div class="bg-surface-container-low rounded-[2.5rem] p-8 md:p-16 text-center max-w-4xl mx-auto border border-outline-variant/30">
+<span class="material-symbols-outlined text-5xl text-primary mb-6" style="font-variation-settings: 'FILL' 1;">waving_hand</span>
+<h2 class="text-4xl md:text-5xl font-display font-medium text-on-background mb-6">Let's Connect</h2>
+<p class="text-on-surface-variant text-lg max-w-xl mx-auto mb-10 leading-relaxed">
+                    Whether you have a question, a project idea, or just want to say hi, I'm always open to discussing new opportunities and collaborations.
+                </p>
+<div class="flex flex-col md:flex-row items-center justify-center gap-6">
+<a class="inline-flex items-center justify-center px-8 py-4 bg-primary text-on-primary rounded-2xl font-medium hover:bg-primary/90 transition-all active:scale-95 text-base w-full md:w-auto gap-2" href="mailto:muhammadhassnainjafar@gmail.com">
+<span class="material-symbols-outlined text-sm">mail</span>
+                        Email Me
+                    </a>
+<div class="flex gap-4">
+<a class="p-4 bg-surface text-primary border border-outline-variant/50 rounded-2xl hover:bg-surface-container hover:border-primary/50 transition-all active:scale-95 flex items-center justify-center tooltip-trigger" href="https://www.linkedin.com/in/muhammad-hassnain-jafar-626199217/" rel="noopener noreferrer" target="_blank" title="LinkedIn">
+<span class="material-symbols-outlined">work</span>
+</a>
+<a class="p-4 bg-surface text-primary border border-outline-variant/50 rounded-2xl hover:bg-surface-container hover:border-primary/50 transition-all active:scale-95 flex items-center justify-center tooltip-trigger" href="https://github.com/SherlockHolmes1249/Website-for-assignment" rel="noopener noreferrer" target="_blank" title="GitHub">
+<span class="material-symbols-outlined">code</span>
+</a>
+<a class="p-4 bg-surface text-primary border border-outline-variant/50 rounded-2xl hover:bg-surface-container hover:border-primary/50 transition-all active:scale-95 flex items-center justify-center tooltip-trigger" href="tel:+923166885215" title="+92 316 6885215">
+<span class="material-symbols-outlined">call</span>
+</a>
+</div>
+</div>
+<div class="mt-12 flex flex-col md:flex-row items-center justify-center gap-8 text-on-surface-variant text-sm font-medium">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-outline">mail</span>
+                        muhammadhassnainjafar@gmail.com
+                    </div>
+<div class="hidden md:block w-1 h-1 bg-outline-variant rounded-full"></div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-outline">call</span>
+                        +92 316 6885215
+                    </div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer Component -->
+<footer class="full-width py-12 bg-surface-container-low border-t border-outline-variant mt-24">
+<div class="flex flex-col md:flex-row justify-between items-center w-full px-6 max-w-7xl mx-auto gap-6 font-body text-label-md">
+<div class="text-lg font-display font-bold text-primary">
+                M. Hassnain Jafar
+            </div>
+<div class="text-on-surface-variant">
+                (c) 2026 M. Hassnain Jafar. All rights reserved.
+            </div>
+<div class="flex gap-6">
+<a class="text-on-surface-variant hover:text-primary transition-colors duration-200" href="https://www.linkedin.com/in/muhammad-hassnain-jafar-626199217/" rel="noopener noreferrer" target="_blank">LinkedIn</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors duration-200" href="https://github.com/SherlockHolmes1249/Website-for-assignment" rel="noopener noreferrer" target="_blank">GitHub</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors duration-200" href="mailto:muhammadhassnainjafar@gmail.com">Email</a>
+</div>
+</div>
+</footer>
+<script>
+        const mobileMenuButton = document.querySelector('#mobile-menu-button');
+        const mobileMenu = document.querySelector('#mobile-menu');
+
+        mobileMenuButton?.addEventListener('click', () => {
+            const isOpen = mobileMenu.classList.toggle('hidden') === false;
+            mobileMenuButton.setAttribute('aria-expanded', String(isOpen));
+        });
+
+        // Simple smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+                mobileMenu?.classList.add('hidden');
+                mobileMenuButton?.setAttribute('aria-expanded', 'false');
+            });
+        });
+    </script>
+</body></html>
